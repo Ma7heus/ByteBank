@@ -6,6 +6,12 @@ public class Conta {
 	 private int numero;
 	 private Cliente titular;
 	 
+	 public Conta(int agencia,int numero, double saldo) {
+		 this.agencia = agencia; // 3 Characters
+		 this.numero = numero; //4 Characters
+		 this.saldo = saldo;
+		 System.out.println("Criando nova conta!");
+	 }
 	 
 	 public void depositar(double valor) {
 		 this.saldo += valor;

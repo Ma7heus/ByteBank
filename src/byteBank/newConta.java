@@ -11,18 +11,15 @@ public class newConta {
 		
 		System.out.println(matheus.getCpf());
 			
-		Conta conta1 = new Conta();
-			conta1.setSaldo(100);
+		Conta conta1 = new Conta(123,1234,100);
+			conta1.depositar(100);
 			conta1.setTitular(matheus);
 			
 		System.out.println(conta1.getTitular().getNome());
 		System.out.println(conta1.getSaldo());
-			
+		System.out.println(conta1.getAgencia());
+		System.out.println(conta1.getNumero());
 		
-			
-			
-		//Conta contaMatheus = matheus;
-		//System.out.println(matheus.getNome());
 		
 
 
