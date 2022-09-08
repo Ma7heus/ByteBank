@@ -5,11 +5,13 @@ public class Conta {
 	 private int agencia;
 	 private int numero;
 	 private Cliente titular;
+	 private static int total = 0;
 	 
 	 public Conta(int agencia,int numero, double saldo) {
 		 this.agencia = agencia; // 3 Characters
 		 this.numero = numero; //4 Characters
 		 this.saldo = saldo;
+		 total ++;
 		 System.out.println("Criando nova conta!");
 	 }
 	 
@@ -65,5 +67,8 @@ public class Conta {
 		this.titular = titular;
 	}
 	 
+	public static int getTotal() {
+		return Conta.total;
+	}
 	 
 }

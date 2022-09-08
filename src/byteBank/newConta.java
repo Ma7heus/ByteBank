@@ -19,7 +19,7 @@ public class newConta {
 		System.out.println(conta1.getSaldo());
 		System.out.println(conta1.getAgencia());
 		System.out.println(conta1.getNumero());
-		
+		System.out.println(Conta.getTotal());
 		
 
 
